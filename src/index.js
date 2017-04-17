@@ -53,7 +53,7 @@ class App extends React.Component{
 	render(){
 		return(
 			<div className="content">
-        <img src="youtubelogo.png" />
+        <img className = "youtube-logo" src="youtubelogo.png" />
 				<form className="inputForm" onSubmit={this.searchVideos}>
 					<input className="inputField" ref="keyword" type="text" placeholder="Search..."/>
 				</form>

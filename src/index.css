@@ -10,24 +10,27 @@ h1,h2,h3,h4,h5,h6, p, a{
 .main-content{
 	padding-top: 50px;
 	display: inline-block;
-	background-color: #f1f1f1;
+	/*background-color: #f1f1f1;*/
+	background-color: red;
 	width: 100%;
+	padding-bottom: 5%;
 }
+
 .videoDisplay{
-	background-color: white;
-	width: auto;
-	padding-left: 5%;
+	margin-left: 5%;
+	float: left;
+	border-style: solid;
+	border-width: 40px 40px 40px 40px;
+	border-color: white;
 }
 .videoList{
+	background-color: white;
+	/*margin-left: 5%;*/
+	margin: 0;
 	list-style-type: none;
 }
-.sidebar{
-	/*-webkit-box-flex: 1;
-	flex: 1;*/
-	max-height: 80vh;
-	overflow: scroll;
-}
-.content img{
+
+.content .youtube-logo{
 	width: 10%;
 	float: left;
 	margin-right: 2%;
@@ -43,4 +46,11 @@ h1,h2,h3,h4,h5,h6, p, a{
 }
 .inputForm{
 	padding-top: 1%;
+}
+
+.sidebar{
+	-webkit-box-flex: 1;
+	flex: 1;
+	max-height: 40vh;
+	overflow: scroll;
 }
