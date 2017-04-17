@@ -1,11 +1,14 @@
 import React from 'react';
 
 function VideoList(props){
-	console.log(props);
 	return(
 		<div>
-			<ul>
-				{props.videos.map((video, i) => <li key={i}>{video.snippet.title}</li>)}
+			<ul className="videoList">
+			<div>
+				{props.videos.map((video, i) => <li key={i}><img src={video.snippet.thumbnails.default.url}/> {video.snippet.title}</li>)}
+
+			</div>
+
 			</ul>
 		</div>
 	)

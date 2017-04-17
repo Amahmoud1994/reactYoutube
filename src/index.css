@@ -9,5 +9,12 @@ h1,h2,h3,h4,h5,h6, p, a{
 
 .main-content{
 	padding-top: 50px;
+	display: inline-block;
 }
-
+.videoDisplay{
+	float: left;
+}
+.videoList{
+	list-style-type: none;
+	padding-left: 60%;
+}
