@@ -2,9 +2,9 @@ import React from 'react';
 
 function VideoList(props){
 	return(
-		<div>
+		<div >
 			<ul className="videoList">
-			<div>
+			<div >
 				{props.videos.map((video, i) => <li onClick={() => props.onVideoSelect(video)} key={i}><img src={video.snippet.thumbnails.default.url}/> {video.snippet.title}</li>)}
 
 			</div>

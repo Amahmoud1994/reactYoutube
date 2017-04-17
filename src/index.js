@@ -52,9 +52,10 @@ class App extends React.Component{
 
 	render(){
 		return(
-			<div>
-				<form onSubmit={this.searchVideos}>
-					<input ref="keyword" type="text"/>
+			<div className="content">
+        <img src="youtubelogo.png" />
+				<form className="inputForm" onSubmit={this.searchVideos}>
+					<input className="inputField" ref="keyword" type="text" placeholder="Search..."/>
 				</form>
 				<div className="main-content">
 					<VideoPreview selectedVideo={this.state.selectedVideo} />
