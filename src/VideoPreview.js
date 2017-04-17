@@ -4,8 +4,8 @@ function VideoPreview(props){
 	const DEFAULT_VIDEO = "https://www.youtube.com/embed/ES32UFlPOUA";
 	let videoURL = DEFAULT_VIDEO;
 
-	if (props.firstVideo) {
-		let videoId = props.firstVideo.id.videoId;
+	if (props.selectedVideo) {
+		let videoId = props.selectedVideo.id.videoId;
 		videoURL = `https://www.youtube.com/embed/${videoId}` ;
 	}
 

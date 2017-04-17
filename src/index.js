@@ -42,7 +42,9 @@ class App extends React.Component{
 		params.q = keyword;
 
 		axios.get(API_URL, {params: params}).then(response => {
-			this.setState({videos: response.data.items
+			this.setState({
+        videos: response.data.items,
+        selectedVideo: response.data.items[0]
       });
 		});
 	}
@@ -55,7 +57,7 @@ class App extends React.Component{
 					<input ref="keyword" type="text"/>
 				</form>
 				<div className="main-content">
-					<VideoPreview firstVideo={this.state.videos[0]} />
+					<VideoPreview selectedVideo={this.state.selectedVideo} />
 					<VideoList onVideoSelect={selectedVideo => this.setState({ selectedVideo })}
               videos={this.state.videos} />
 				</div>
