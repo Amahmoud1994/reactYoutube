@@ -5,7 +5,7 @@ function VideoList(props){
 		<div className="sidebar">
 			<ul className="videoList">
 			<div>
-				{props.videos.map((video, i) => <li onClick={() => props.onVideoSelect(video)} key={i}><img src={video.snippet.thumbnails.default.url}/> <p>{video.snippet.title}</p></li>)}
+				{props.videos.map((video, i) => <li onClick={() => props.onVideoSelect(video)} key={i}><img className="videoImage" src={video.snippet.thumbnails.default.url}/> <p>{video.snippet.title}</p><div className="clear"></div></li>)}
 
 			</div>
 
