@@ -37,6 +37,7 @@ h1,h2,h3,h4,h5,h6, p, a{
 	float: left;
 	padding-bottom: 2%;
 	padding-right: 3%;
+	padding-top: 3%;
 }
 .videoList p{
 	padding: 5%;
